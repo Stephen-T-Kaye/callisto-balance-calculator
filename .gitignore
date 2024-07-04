@@ -1,12 +1,4 @@
-HELP.md
-target/
-.mvn/
-
-### IntelliJ IDEA ###
+.vscode/settings.json
+.env*
 .idea
-*.iws
-*.iml
-*.ipr
-
-### VS Code ###
-.vscode
+target

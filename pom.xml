@@ -18,7 +18,7 @@
         <repository>
             <id>github-packages</id>
             <name>Callisto github packages</name>
-            <url>https://maven.pkg.github.com/UKHomeOffice/*</url>
+            <url>https://maven.pkg.github.com/Stephen-T-Kaye/*</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
@@ -29,6 +29,9 @@
         <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+        <sonar.organization>stephen-t-kaye</sonar.organization>
+        <sonar.projectKey>stephen-t-kaye_callisto-balance-calculator</sonar.projectKey>
+        <sonar.projectName>stephen-t-kaye_callisto-balance-calculator</sonar.projectName>
         <sonar.language>java</sonar.language>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <checkstyle-maven-plugin.version>3.2.0</checkstyle-maven-plugin.version>
@@ -82,6 +85,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.springframework.kafka</groupId>
