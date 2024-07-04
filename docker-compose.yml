@@ -15,8 +15,8 @@ services:
     user: "1000"
     working_dir: "/app"
     ports:
-      - "50210:9090"
-      - "50211:5005"
+      - "60410:9090"
+      - "60415:5005"
     volumes:
       - ./:/app
       - $HOME/.m2:/Users/1000/.m2 # Required for artifactory dependencies
@@ -26,7 +26,7 @@ services:
       MAVEN_USER_HOME: /Users/1000/.m2
       KEYSTORE_LOCATION: file://keystore/balance-calculator/balance-calculator.keystore.jks
       KEYSTORE_PASSWORD: changeit
-      ACCRUALS_URL: "http://callisto-accruals-restapi:9090"
+      ACCRUALS_URL: "http://accruals-restapi:9090"
       SPRING_APPLICATION_JSON: '{
           "spring.kafka.ssl.trust-store-location": "file://keystore/balance-calculator/balance-calculator.truststore.jks",
           "spring.kafka.ssl.trust-store-password": "changeit"
